@@ -24,13 +24,12 @@ export const Welcome = () => {
             </p>
           </div>
           <div className="space-y-2 animate__animated animate__fadeIn animate__delay-1s">
-            <p className="text-gray-300 md:text-[1.05rem]">
+            <p className="text-gray-300 md:text-[1.05rem] max-w-[700px]">
               {language == "EN"
                 ? `This space is a little window into my world where creativity meets
               curiosity. Feel free to explore, get inspired, or just hang out
               for a bit.`
-                : `Este espacio es una pequeña ventana a mi mundo, donde la creatividad se encuentra con la curiosidad. Siéntete libre de explorar, inspirarte o simplemente pasar el rato
-un rato.`}
+                : `Este espacio es una pequeña ventana a mi mundo, donde la creatividad se encuentra con la curiosidad. Siéntete libre de explorar, inspirarte o simplemente pasar el rato.`}
             </p>
           </div>
         </div>
