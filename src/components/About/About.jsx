@@ -11,12 +11,17 @@ export const About = () => {
     useIntersectionObserver(favorites);
   const { language } = useContext(LanguageContext);
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [hasAnimatedSection, setHasAnimatedSection] = useState(false);
 
   useEffect(() => {
     if (favoritesIntersect) {
       setHasAnimated(true);
     }
-  }, [favoritesIntersect]);
+
+    if (isIntersecting) {
+      setHasAnimatedSection(true);
+    }
+  }, [favoritesIntersect, isIntersecting]);
 
   const interests = [
     {
@@ -75,7 +80,9 @@ export const About = () => {
         <div className="max-w-7xl mx-auto">
           <h2
             className={`text-4xl md:text-5xl font-bold text-white mb-12 text-center ${
-              isIntersecting
+              hasAnimatedSection
+                ? "animate__animated animate__fadeInDown"
+                : isIntersecting
                 ? "animate__animated animate__fadeInDown"
                 : "opacity-0"
             }`}
@@ -86,7 +93,9 @@ export const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div
               className={
-                isIntersecting
+                hasAnimatedSection
+                  ? "animate__animated animate__fadeInLeft"
+                  : isIntersecting
                   ? "animate__animated animate__fadeInLeft"
                   : "opacity-0"
               }
@@ -102,7 +111,9 @@ export const About = () => {
             </div>
             <div
               className={`space-y-6 ${
-                isIntersecting
+                hasAnimated
+                  ? "animate__animated animate__fadeInRight"
+                  : isIntersecting
                   ? "animate__animated animate__fadeInRight"
                   : "opacity-0"
               }`}
@@ -133,9 +144,9 @@ export const About = () => {
                 key={interest.title.EN}
                 className={`bg-gray-800 p-6 rounded-lg transform hover:-translate-y-1 transition-all duration-300 hover:shadow-xl ${
                   hasAnimated
-                    ? ""
+                    ? `animate__animated animate__fadeInUp`
                     : favoritesIntersect
-                    ? `animate__animated animate__fadeInUp animate__delay-${i}s`
+                    ? `animate__animated animate__fadeInUp`
                     : "opacity-0"
                 }`}
               >

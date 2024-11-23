@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import emailjs from "emailjs-com";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -21,6 +21,14 @@ export const Contact = () => {
 
   const sectionRef = useRef(null);
   const { isIntersecting } = useIntersectionObserver(sectionRef);
+
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setHasAnimated(true);
+    }
+  }, [isIntersecting]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -101,14 +109,22 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <h2
           className={`text-4xl md:text-5xl font-bold text-white mb-12 text-center ${
-            isIntersecting ? "animate__animated animate__fadeInUp" : "opacity-0"
+            hasAnimated
+              ? "animate__animated animate__fadeInUp"
+              : isIntersecting
+              ? "animate__animated animate__fadeInUp"
+              : "opacity-0"
           } `}
         >
           {language == "EN" ? "Get In Touch" : "Contactate"}
         </h2>
         <div
           className={`flex flex-wrap justify-center gap-8 ${
-            isIntersecting ? "animate__animated animate__fadeInUp" : "opacity-0"
+            hasAnimated
+              ? "animate__animated animate__fadeInUp"
+              : isIntersecting
+              ? "animate__animated animate__fadeInUp"
+              : "opacity-0"
           }`}
         >
           {socialLinks.map((link) => (
@@ -130,7 +146,11 @@ export const Contact = () => {
         </div>
         <p
           className={`mt-12 text-center text-gray-300 ${
-            isIntersecting ? "animate__animated animate__fadeInUp" : "opacity-0"
+            hasAnimated
+              ? "animate__animated animate__fadeInUp"
+              : isIntersecting
+              ? "animate__animated animate__fadeInUp"
+              : "opacity-0"
           }`}
         >
           {language == "EN"
@@ -140,7 +160,11 @@ export const Contact = () => {
         </p>
         <div
           className={`max-w-3xl mx-auto mt-12 ${
-            isIntersecting ? "animate__animated animate__fadeInUp" : "opacity-0"
+            hasAnimated
+              ? "animate__animated animate__fadeInUp"
+              : isIntersecting
+              ? "animate__animated animate__fadeInUp"
+              : "opacity-0"
           } animate__delay-1s`}
         >
           <form onSubmit={handleSubmit} className="space-y-6">
