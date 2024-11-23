@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex justify-around items-center">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-2xl font-bold mb-2">{"<Dot Dager>"}</h3>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mr-8 md:mr-0">
               {language == "EN"
                 ? `Exploring the intersections of technology, philosophy, and
               creativity.`
