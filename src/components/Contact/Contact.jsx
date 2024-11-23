@@ -136,8 +136,7 @@ export const Contact = () => {
           {language == "EN"
             ? `Feel free to reach out through any of these platforms. I'm always
           excited to connect, collaborate, or just chat!`
-            : `No dudes en comunicarte a través de cualquiera de estas plataformas. ¡Siempre estoy
-          entusiasmado por conectarme, colaborar o simplemente charlar!`}
+            : `No dudes en comunicarte a través de cualquiera de estas plataformas. ¡Siempre estoy emocionado de conectar, colaborar o simplemente charlar!`}
         </p>
         <div
           className={`max-w-3xl mx-auto mt-12 ${
