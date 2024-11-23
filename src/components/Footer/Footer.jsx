@@ -35,7 +35,7 @@ export const Footer = () => {
                   href="#about"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
-                  {language == "EN" ? "About" : "Sobre Mi"}
+                  {language == "EN" ? "About" : "Sobre Mí"}
                 </a>
               </li>
 

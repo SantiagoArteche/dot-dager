@@ -80,7 +80,7 @@ export const About = () => {
                 : "opacity-0"
             }`}
           >
-            {language === "EN" ? "About Me" : "Sobre Mi"}
+            {language === "EN" ? "About Me" : "Sobre Mí"}
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">

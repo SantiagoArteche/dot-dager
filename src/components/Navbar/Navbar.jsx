@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   const navItems = [
     { en: "Home", es: "Inicio" },
-    { en: "About", es: "Sobre Mi" },
+    { en: "About", es: "Sobre Mí" },
     { en: "Contact", es: "Contacto" },
   ];
 

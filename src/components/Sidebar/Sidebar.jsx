@@ -92,7 +92,7 @@ export const Sidebar = () => {
             className="flex items-center mt-8 p-2 hover:bg-gray-800 rounded transition-all"
           >
             <span className="ml-3 text-xl ">
-              {language == "EN" ? "About" : "Sobre Mi"}
+              {language == "EN" ? "About" : "Sobre Mí"}
             </span>
           </a>
           <a
