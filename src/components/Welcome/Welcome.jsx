@@ -24,7 +24,7 @@ export const Welcome = () => {
             </p>
           </div>
           <div className="space-y-2 animate__animated animate__fadeIn animate__delay-1s">
-            <p className="text-gray-300 md:text-[1.05rem] max-w-[700px]">
+            <p className="text-gray-300 md:text-[1.05rem] max-w-[850px]">
               {language == "EN"
                 ? `This space is a little window into my world where creativity meets
               curiosity. Feel free to explore, get inspired, or just hang out
