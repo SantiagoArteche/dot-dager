@@ -140,7 +140,7 @@ export const Contact = () => {
           entusiasmado por conectarme, colaborar o simplemente charlar!`}
         </p>
         <div
-          className={`max-w-4xl mx-auto mt-12 ${
+          className={`max-w-3xl mx-auto mt-12 ${
             isIntersecting ? "animate__animated animate__fadeInUp" : "opacity-0"
           } animate__delay-1s`}
         >
