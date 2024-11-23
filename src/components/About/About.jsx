@@ -111,7 +111,7 @@ export const About = () => {
             </div>
             <div
               className={`space-y-6 ${
-                hasAnimated
+                hasAnimatedSection
                   ? "animate__animated animate__fadeInRight"
                   : isIntersecting
                   ? "animate__animated animate__fadeInRight"
