@@ -119,7 +119,7 @@ export const About = () => {
               <p className="text-gray-300">
                 {language === "EN"
                   ? "When I'm not coding or creating content, you'll find me exploring new technologies, playing with my cats, or philosophizing about the universe while enjoying a good pickle. My interests are:"
-                  : "Cuando no estoy programando o creando contenido, me encontrarás explorando nuevas tecnologías, jugando con mis gatos o filosofando sobre el universo mientras disfruto de un buen pepinillo. Mis intereses incluyen:"}
+                  : "Cuando no estoy programando o creando contenido, me encontrarás explorando nuevas tecnologías, jugando con mis gatos o filosofando sobre el universo mientras disfruto de un buen pepinillo. Mis pasiones incluyen:"}
               </p>
             </div>
           </div>
