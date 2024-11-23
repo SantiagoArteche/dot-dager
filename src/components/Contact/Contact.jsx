@@ -9,7 +9,7 @@ const SocialIcon = ({ path, viewBox = "0 0 24 24", ariaLabel }) => (
     viewBox={viewBox}
     aria-label={ariaLabel}
   >
-    <path d={path} />
+    <path d={path} className="group-hover:text-blue-500" />
   </svg>
 );
 
@@ -117,7 +117,7 @@ export const Contact = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className="text-gray-500 hover:text-red transition-colors duration-300 group"
               aria-label={link.name}
             >
               <SocialIcon

@@ -85,7 +85,7 @@ export const Navbar = () => {
             <li className="hover:translate-y-0.5 transition-all duration-200">
               <button
                 onClick={changeLanguage}
-                className="text-lg font-medium text-gray-300 transition-colors hover:text-blue-500"
+                className="text-lg font-medium text-gray-300 transition-colors"
               >
                 <img
                   alt={language === "ES" ? "Argentina" : "United States"}
@@ -98,12 +98,12 @@ export const Navbar = () => {
             </li>
             <li>
               <button
-                className="hidden sm:block text-white focus:outline-none ml-4"
+                className="hidden sm:block text-white focus:outline-none ml-4 group"
                 aria-label="Toggle menu"
                 onClick={openSideMenu}
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-6 h-6 transition-colors duration-200"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -113,6 +113,7 @@ export const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
+                    className="text-white group-hover:text-blue-500"
                     d={
                       isOpen
                         ? "M6 18L18 6M6 6l12 12"
