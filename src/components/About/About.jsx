@@ -72,7 +72,7 @@ export const About = () => {
   return (
     <section ref={sectionRef} id="about" className="bg-gray-900 py-[5.5rem]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2
             className={`text-4xl md:text-5xl font-bold text-white mb-12 text-center ${
               isIntersecting
